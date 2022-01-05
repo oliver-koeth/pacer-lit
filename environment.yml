@@ -1,0 +1,16 @@
+name: pacer-lit-env
+
+channels:
+    - conda-forge
+
+dependencies:
+  - ipython
+  - matplotlib
+  - numpy
+  - seaborn
+  - pandas
+  - pip
+  - python
+  - scikit-learn
+  - streamlit
+  - bokeh
