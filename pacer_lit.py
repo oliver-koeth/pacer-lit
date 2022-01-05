@@ -56,7 +56,7 @@ if reference_run is not None:
             ),
     )
 
-    reference_chart_elevation = reference_chart_base.mark_area(opacity=0.5, color="white").encode(
+    reference_chart_elevation = reference_chart_base.mark_area(opacity=0.5, color="grey").encode(
         y=alt.Y(
             field="elevation", type="quantitative", 
             axis=alt.Axis(labels=False,grid=False,title=None,ticks=False,domainOpacity=0),
@@ -64,7 +64,7 @@ if reference_run is not None:
             ),
     )
 
-    reference_chart_pace = reference_chart_base.mark_line(opacity=0.7, color='white').encode(
+    reference_chart_pace = reference_chart_base.mark_line(opacity=0.7, color='grey').encode(
         y=alt.Y(
             field="pace_segment", type="quantitative", 
             axis=alt.Axis(labels=False,grid=False,title=None,ticks=False,domainOpacity=0),
@@ -89,7 +89,7 @@ if target_run is not None:
     target.subheader("Target Profile")
     target_data = load_target_data(target_run.getvalue())
 
-    c = alt.Chart(target_data).mark_area(opacity=0.5,color="white").encode(
+    c = alt.Chart(target_data).mark_area(opacity=0.5,color="grey").encode(
         x=alt.X(
             field="distance_sum", type="quantitative", 
             axis=alt.Axis(labels=False,grid=False,title=None,ticks=False,domainOpacity=0)
