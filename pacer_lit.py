@@ -13,8 +13,15 @@ st.set_page_config(
      initial_sidebar_state="expanded",
      menu_items={
          'Get Help': 'https://nttdata-dach.github.io/posts/ok-pacer/',
-         'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "See the *Get Help* section for more info on this project"
+         'Report a bug': "https://github.com/oliver-koeth/pacer-lit/issues",
+         'About': """
+# Pacer Project
+This project predicts the pace for a given trail-run gps track based on a
+base pace plus the uphill/downhill "penalties" from the base pace based on the
+elevation per 100m. The pace prediction is based on a regression model which
+is trained with a "reference run". The closer the reference run is to the 
+predicted run (duration, elevation, technicality) the better the prediction.
+         """
      }
 )
 
