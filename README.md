@@ -10,14 +10,25 @@ two races (Karwendelmarsch and Innsbruck Alpine Trail Festival) and
 provides a prediction for the Zugspitz Supertrail XL course. Of course you can replace 
 the GPX files in `./data` with your own files and re-run the notebook.
 
+## TODO
+[x] RACRPACR Project
+[x] Complete Data
+[x] Write Introduction
+[ ] Reset Function
+[ ] Library Files
+[ ] Scale Results
+[ ] Demo Video
+[ ] CRUD Splits
+
 
 ## Run locally in conda
 When running for the first time, create a respective conda environment. In case
 of doubt whether a conda environment exists, you can list all environments
-(the environment for this project is called `pacer-lit-env`):
+(the environment for this project is called `pacer-lit-env`, the environment file 
+uses the extension `.local` so that Stremalit.io cloud does not get confused.):
 ```
 conda env list
-conda env create -f environment.yml
+conda env create -f environment.yml.local
 conda activate pacer-lit-env
 pip install -r requirements.txt
 ```
@@ -34,4 +45,5 @@ conda remove --name pacer-lit-env --all
 ```
 
 ## Deploy on Streamlit Cloud
+
 
